@@ -61,6 +61,13 @@ namespace LibApp2
 
             app.UseEndpoints(endpoints =>
             {
+            endpoints.MapControllerRoute(
+                name: "BooksByResaultDate",
+                pattern: "books/relased/{year}/{month}"
+                //default: 
+                );
+          
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
