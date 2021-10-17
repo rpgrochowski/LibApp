@@ -12,10 +12,10 @@ namespace LibApp2.Controllers
         public IActionResult Random()
         {
             var firstBook = new Book() { Name = "English dictionary" };
-            var secondBook = new Book() { Name = "German dictionary" };
+            //var secondBook = new Book() { Name = "German dictionary" };
 
-            ViewBag.Book1 = firstBook;
-            ViewBag.Book2 = secondBook;
+            //ViewBag.Book1 = firstBook;
+            //ViewBag.Book2 = secondBook;
             return View(firstBook);
         }
 
